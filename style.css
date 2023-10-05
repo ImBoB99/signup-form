@@ -7,12 +7,23 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     display: flex;
     flex-direction: row;
     height: 100vh;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #758a63;
 }
 
 .hero-container {
@@ -43,6 +54,95 @@ main {
     font-family: "Norse Bold", sans-serif;
 }
 
-.form-container {
+.form-container-outer {
     width: 60%;
+    background-color: rgb(229, 234, 240);
+}
+
+.form-container-outer > p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    
+}
+
+.form-container-inner {
+    background-color: #FFFF;
+    box-shadow: 4px 6px 10px 0px rgba(171,171,171,1);
+}
+
+.form-container-inner h2 {
+    padding: 2rem;
+
+}
+
+.form-container {
+    padding: 2rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-button {
+    margin: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background-color: #596D48;
+    border: none;
+    color: #FFFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form-button:hover {
+    background-color: #758a63;
+    cursor: pointer;
+}
+
+.form-button + p {
+    padding-top: 0px;
+    font-size: 16px;
+}
+
+.form-container label {
+    color: rgb(100, 99, 99);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container input {
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+input.focus {
+    border: 1px solid rgb(25, 25, 201);
+    box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.error-message-shown {
+    visibility: visible;
 }
